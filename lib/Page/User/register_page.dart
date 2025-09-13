@@ -117,7 +117,7 @@ Widget build(BuildContext context) {
                     onPressed: () {
                       Navigator.pushReplacementNamed(context, '/login');
                     },
-                    child: const Text("Đã có tài khoản? Đăng nhập"),
+                    child: const Text("Đã có tài khoản? Đăng nhập", style: TextStyle(color:  Color(0xFFB71C1C))),
                   ),
                 ],
               ),

@@ -70,8 +70,10 @@ Widget build(BuildContext context) {
                     decoration: const InputDecoration(
                       labelText: 'Mật khẩu',
                       border: OutlineInputBorder(),
+                 
                     ),
                     obscureText: true,
+                    
                     onChanged: (val) => password = val,
                     validator: (val) => val == null || val.length < 6
                         ? 'Tối thiểu 6 ký tự'
@@ -109,7 +111,7 @@ Widget build(BuildContext context) {
                     onPressed: () {
                       Navigator.pushReplacementNamed(context, '/register');
                     },
-                    child: const Text("Chưa có tài khoản? Đăng ký"),
+                    child: const Text("Chưa có tài khoản? Đăng ký", style: TextStyle(color:  Color(0xFFB71C1C)),),
                   ),
                 ],
               ),
